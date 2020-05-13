@@ -1,4 +1,4 @@
-package com.javaex.practice;
+package com.javaex.practice_again;
 
 public class Ex08 {
 
@@ -9,13 +9,14 @@ public class Ex08 {
 		for(int i=0; i<lotto.length; i++) {
 			lotto[i] = (int)(Math.random()*45)+1;
 			
-			for(int j=1; j<i; j++) {
-				if(lotto[i]==lotto[j]) {
+			for(int j=0; i<j; j++) {
+				if(lotto[j]==lotto[i]) {
 					i--;
-				}//if
-			}//for
-			System.out.println(lotto[i]+"\t");
+				};//if
+			}//for in
+			System.out.print(lotto[i]+"\t");
 		}
+		
 		
 	}
 }
